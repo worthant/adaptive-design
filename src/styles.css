@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .table-cell {
+        @apply border border-white px-2 sm:px-10 py-2 text-center justify-center items-center;
+    }
+
+    .hit {
+        @apply text-green-500;
+        @apply inline-block;
+    }
+
+    .miss {
+        @apply text-red-500;
+    }
+}
+
+@media (min-width: 640px) {
+    .custom-grid-sm {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+@media (max-width: 370px) {
+    .table-cell {
+        @apply px-0;
+        min-width: 50px;
+    }
+}
+
+html {
+    @apply scroll-smooth;
+}
