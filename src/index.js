@@ -9,6 +9,8 @@ import {
     getK
 } from "./canvas-setup.js";
 
+import $ from 'jquery';
+
 document.addEventListener("DOMContentLoaded", () => {
     setupCanvas();
     attachCanvasClickListener();
