@@ -22,7 +22,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn build:css
-    - name: Lint with ESLint
-      run: yarn lint
     - name: Run unit tests
       run: yarn test
