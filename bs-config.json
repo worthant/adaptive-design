@@ -1,8 +1,13 @@
 {
     "server": {
-        "baseDir": "./public"
+      "baseDir": "./src",
+      "routes": {
+        "/public": "./public"
+      }
     },
     "files": [
-        "./public/**/*.{html,htm,css,js}"
+      "./src/**/*.{html,js}",
+      "./public/**/*.{css,svg,ico,png}"
     ]
-}
+  }
+  
