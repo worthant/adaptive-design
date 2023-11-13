@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .table-cell {
+        @apply border border-white px-2 sm:px-10 py-2 text-center justify-center items-center;
+    }
+
+    .hit {
+        @apply text-green-500;
+        @apply inline-block;
+    }
+
+    .miss {
+        @apply text-red-500;
+    }
+
+    .btn {
+        @apply h-10 w-10 p-2 rounded-lg bg-blue-500 hover:bg-blue-700 text-white;
+    }
+
+    .pressed {
+        @apply bg-white text-black;
+    }
+
+    .lbl {
+        @apply block text-sm font-medium text-gray-300;
+    }
+}
+
+@media (min-width: 640px) {
+    .custom-grid-sm {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+@media (max-width: 370px) {
+    .table-cell {
+        @apply px-0;
+        min-width: 50px;
+    }
+}
+
+@media (min-width: 640px) {
+    .graph-custom-grid-sm {
+        grid-template-columns: 10fr 1fr 10fr;
+    }
+}
+
+html {
+    @apply scroll-smooth;
+}
