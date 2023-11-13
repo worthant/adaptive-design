@@ -15,6 +15,18 @@
     .miss {
         @apply text-red-500;
     }
+
+    .btn {
+        @apply h-10 w-10 p-2 rounded-lg bg-blue-500 hover:bg-blue-700 text-white;
+    }
+
+    .pressed {
+        @apply bg-white text-black;
+    }
+
+    .lbl {
+        @apply block text-sm font-medium text-gray-300;
+    }
 }
 
 @media (min-width: 640px) {
@@ -27,6 +39,12 @@
     .table-cell {
         @apply px-0;
         min-width: 50px;
+    }
+}
+
+@media (min-width: 640px) {
+    .graph-custom-grid-sm {
+        grid-template-columns: 10fr 1fr 10fr;
     }
 }
 
