@@ -15,11 +15,12 @@
   },
   "scripts": {
     "dev": "yarn build && yarn start",
-    "start": "lite-server",
+    "serve": "lite-server",
     "build": "tailwindcss -i ./src/styles.css -o ./public/output.css",
     "build:css": "tailwindcss -i ./src/styles.css -o ./public/output.css",
     "lint": "eslint ./src/*.js ./__tests__/*.js",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "bash ./deploy.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
